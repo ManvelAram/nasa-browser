@@ -1,4 +1,16 @@
 {
     "home": "ԳԼԽԱՎՈՐ",
-    "NEARBY_ASTEROIDS": "ՄՈՏԱԿԱ ԱՍՏԵՐՈԻԴԸ"
+    "NEARBY_ASTEROIDS": "ՄՈՏԱԿԱ ԱՍՏԵՐՈԻԴԸ",
+    "ASTRONOMY_PICTURE_OF_THE_DAY" : "ՕՐՎԱ ԱՍՏՐԱՆՈՄԻԿ ՆԿԱՐ",
+    "SUBMIT_NEW_PLANET" : "ՆԵՐԿԱՅԱՑՐԵԼ ՆՈՐ ՄՈԼՈՐԱԿ",
+    "Search_forAsteroids_based_on_their_closest_approach_date_to_Earth": "Որոնեք աստերոիդներ՝ ելնելով Երկիր մոլորակին մոտենալու ամսաթվից",
+    "GO": "ԳԹԻ",
+    "Title": "Անվանում",
+    "Distance_(km)": "Հեռավորությունը (կմ)",
+    "Absolute_Magnitude": "Բացարձակ մեծություն",
+    "Is_potentially_hazardous": "Պոտենցիալ վտանգավոր է",
+    "Diameter_(meters)": "Տրամագիծը (մետր)",
+    "YES": "ԱՅՈ",
+    "NO": "ՈՉ"
+
 }

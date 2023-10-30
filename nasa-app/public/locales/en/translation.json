@@ -1,3 +1,16 @@
 {
-    "home": "home"
+    "home": "HOME",
+    "NEARBY_ASTEROIDS": "NEAR BY ASTEROIDS",
+    "ASTRONOMY_PICTURE_OF_THE_DAY" : "ASTRONOMY PICTURE OF THE DAY",
+    "SUBMIT_NEW_PLANET" : "SUBMIT NEW PLANET",
+    "Search_forAsteroids_based_on_their_closest_approach_date_to_Earth": "Search for Asteroids based on their closest approach date to Earth",
+    "GO": "GO",
+    "Title": "Title",
+    "Distance_(km)": "Distance (km)",
+    "Absolute_Magnitude": "Absolute Magnitude",
+    "Is_potentially_hazardous": "Is potentially hazardous",
+    "Diameter_(meters)": "Diameter (meters)",
+    "YES": "YES",
+    "NO": "NO"
+
 }

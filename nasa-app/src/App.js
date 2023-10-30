@@ -29,9 +29,9 @@ function App() {
   <div className='parent'>
     <Link to="/">{t('home')}</Link>|
     <Link to="/nearbyAsteroids">{t('NEARBY_ASTEROIDS')}</Link>|
-    <Link to="/dayPicthure">ASTRONOMY PICTURE OF THE DAY</Link>|
-    <Link to="/newPlanet">SUBMIT NEW PLANET</Link>
-    <button onClick={()=>changeLanguage('en')}>EN</button>
+    <Link to="/dayPicthure">{t('ASTRONOMY_PICTURE_OF_THE_DAY')}</Link>|
+    <Link to="/newPlanet">{t('SUBMIT_NEW_PLANET')}</Link>
+    <button onClick={()=>changeLanguage('en')} >EN</button>
     <button onClick={()=>changeLanguage('am')}>ՀՅ</button>
     
    

@@ -48,9 +48,15 @@
 }
 
 .parent {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   font-size: 13px;
   gap: 20px;
   text-align: center;
+}
+
+.parent a {
+  text-decoration: none;
+  color: #008cff;
 }

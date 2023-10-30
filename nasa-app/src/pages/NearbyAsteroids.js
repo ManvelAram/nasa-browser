@@ -1,9 +1,14 @@
 
 import React, { useState } from "react";
 import '../Nerby.css'
+import { useTranslation } from 'react-i18next';
+
+
 
 
 function NearbyAsteroids () {
+    const { t } = useTranslation();
+
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState("");
     const [asteroidsData, setAsteroidsData] = useState(null)
@@ -38,7 +43,7 @@ function NearbyAsteroids () {
                             {k.absolute_magnitude_h}
                         </td>
                         <td>
-                            {k.is_potentially_hazardous_asteroid ? 'YES': "NO"}
+                            {k.is_potentially_hazardous_asteroid ? t('YES'): t("NO")}
                         </td>
                         <td>
                             {k.estimated_diameter.meters.estimated_diameter_max}
@@ -51,50 +56,67 @@ function NearbyAsteroids () {
     }
 
     return<>
-        <p>
-            Search for Asteroids based on their closest approach date to Earth
+        
+  
+        <p className="data">
+        {t('Search_forAsteroids_based_on_their_closest_approach_date_to_Earth')}
+            
         </p>
         <div>
 
-            <form>
-                <input id="startDate"
-                    className="data" 
-                    type="date" 
-                    placeholder="Select date" 
-                    aria-required='true' 
-                    autoComplete="off" 
-                    value={startDate}
-                    onChange={(event)=> setStartDate(event.target.value)}
-                />
+            <form className="data">
+                <div className="data">
+                    <input 
+                        className="data-1"
+                        id="startDate" 
+                        type="date" 
+                        placeholder="Select date" 
+                        aria-required='true' 
+                        autoComplete="off" 
+                        value={startDate}
+                        onChange={(event)=> setStartDate(event.target.value)}
+                    />
             
-                <input id="endtDate" 
-                    type="date" 
-                    placeholder="Select date"  
-                    aria-required='true' 
-                    autoComplete="off"
-                    value={endDate}
-                    onChange={(event)=> setEndDate(event.target.value)}
-                />
+                    <input 
+                        className="data-2"
+                        id="endDate"  
+                        type="date" 
+                        placeholder="Select date"  
+                        aria-required='true' 
+                        autoComplete="off"
+                        value={endDate}
+                        onChange={(event)=> setEndDate(event.target.value)}
+                    />
+                    <button 
+                        className="buttGo"
+                        type="button" 
+                        onClick={callTheFetch}>
+                            {t('GO')}
+                    </button>
+                </div>
+                
                     
-                <button type="button" onClick={callTheFetch}>Go</button>
+                
             </form>
         </div>
         <div className="tableDiv mtb-3">
             <table className="table">
-                <thead>
+                <thead className="table-row">
                     <tr>
-                        <th className="th">Title</th>
-                        <th>Distance (km)</th>
-                        <th>Absolute Magnitude</th>
-                        <th>Is potentially hazardous</th>
-                        <th>Diameter (meters)</th>
+                        <th>{t('Title')}</th>
+                        <th>{t('Distance_(km)')}</th>
+                        <th>{t('Absolute_Magnitude')}</th>
+                        <th>{t('Is_potentially_hazardous')}</th>
+                        <th>{t('Diameter_(meters)')}</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="row">
                     {asteroidsData && <Row/>}
                 </tbody>
             </table>
         </div>
+        
+        
         
         
         
